@@ -1,0 +1,85 @@
+@font-face {
+  font-family: font1;
+  src: url(fonts/Beatrice-Regular.ttf);
+}
+@font-face {
+  font-family: font2;
+  src: url(fonts/Beatrice-Medium.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  gap: 10vh;
+  background-color: #000;
+}
+
+.main p {
+  width: 30%;
+  font-size: 1vw;
+  color: #fff;
+  padding: 30vh 0vh;
+  font-family: font1;
+}
+
+.resume {
+  width: 38%;
+  height: 95vh;
+  /* background-color: #d43f3f; */
+}
+
+.img {
+  width: 100%;
+  height: 31vh;
+  transform-origin: top;
+  /* transform: perspective(1000px) rotateX(-50deg); */
+  /* border-radius: 1px solid red; */
+}
+
+#img2 {
+  transform: perspective(1000px) rotateX(-90deg);
+}
+
+#img3 {
+  transform: perspective(1000px) rotateX(-90deg);
+}
+
+.img img {
+  width: 100%;
+}
+
+.text {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text h1 {
+  color: #fff;
+  font-family: font2;
+  font-size: 5vw;
+  font-weight: 400;
+  z-index: 99;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #111111bf;
+  pointer-events: none;
+}
